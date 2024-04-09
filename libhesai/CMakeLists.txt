@@ -126,7 +126,13 @@ if(WITH_LOG)
 endif(WITH_LOG)
 
 
-
-
 # Property
 include_directories(${PROJECT_SOURCE_DIR})
+
+
+install(
+    TARGETS source_lib ptcClient_lib ptcParser_lib log_lib platutils_lib container_lib
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+    RUNTIME DESTINATION bin
+)
