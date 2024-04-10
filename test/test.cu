@@ -21,15 +21,16 @@ int main(int argc, char *argv[])
   // assign param
   param.decoder_param.enable_parser_thread = false;
   param.input_param.source_type = DATA_FROM_LIDAR;
-  param.input_param.pcap_path = "Your pcap file path";
-  param.input_param.correction_file_path = "Your correction file path";
-  param.input_param.firetimes_path = "Your firetime file path";
+  param.input_param.pcap_path = "";
+  param.input_param.correction_file_path = "";
+  param.input_param.firetimes_path = "";
 
-  param.input_param.device_ip_address = "192.168.1.201";
+  param.input_param.device_ip_address = "192.168.123.20";
   param.input_param.ptc_port = 9347;
   param.input_param.udp_port = 2368;
-  param.input_param.host_ip_address = "192.168.1.100";
+  param.input_param.host_ip_address = "192.168.123.24";
   param.input_param.multicast_ip_address = "";
+
 
 
   //init lidar with param
